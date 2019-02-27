@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Edição</title>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <h1>Edição</h1>
+
+    <form>
+        <div>
+            <label for="form-edicao">Nome do Usuário:</label>
+            <input type="text" class="form-edicao" id="nomeUsuario">
+            <label id="erroNome" hidden ></label>
+
+        </div>
+        <div class="form-edicao">
+            <label for="form-edicao">Sobrenome do Usuário:</label>
+            <input type="text" class="form-edicao" id="sobrenomeUsuario">
+            <label id="erroSobrenome" hidden ></label>
+
+        </div>
+        <div class="form-edicao">
+            <label for="form-edicao">CPF do Usuário</label>:</label>
+            <input type="text" class="form-edicao" id="cpfUsuario" maxlength="9">
+            <input type="text" class="form-edicao" id="cpfDigitVef" maxlength="2">
+            <label id="erroCPF" hidden ></label>
+
+        </div>
+        <div class="form-edicao">
+            <label for="form-edicao">RFID do Usuário</label>:</label>
+            <label for="form-edicao" id="rfidUsuario"></label>
+            <label id="erroRFID" hidden ></label>
+        </div>
+        <div class="form-edicao">
+            <label for="form-edicao">Tipo do Usuário</label>:</label>
+            <label for="form-edicao" id="tipoUsuario"></label>
+        </div>
+        </div>
+        <button id="btnConfirmar" type="button" class="btn btn-primary">Confirmar</button>
+        <button id="btnCancelar" type="button" class="btn btn-primary">Cancelar</button>
+    </form>
+</body>
+<!-- <script scr="./Buscar.js"></script>
+<script src="./Editar.js"></script> -->
+<script src = "./Buscar/Editar/BuscarEditar.js"></script>
+<script src= "./Editar.js"></script>
+</html>
